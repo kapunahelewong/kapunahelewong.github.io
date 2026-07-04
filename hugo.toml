@@ -1,0 +1,88 @@
+baseURL = 'https://kapunahelewong.github.io/'
+locale = 'en-us'
+title = "Kapunahele Wong"
+theme = 'PaperMod'
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+pygmentsUseClasses = true
+
+[minify]
+  disableXML = true
+
+[params]
+  env = 'production'
+  mainSections = []
+  title = "Kapunahele Wong"
+  description = "Senior Docs Engineer & Technical Writer — developer documentation, open source, and AI-powered workflows"
+  keywords = ["technical writer", "docs engineer", "developer documentation", "open source", "Bazel", "Angular"]
+  author = "Kapunahele Wong"
+  DateFormat = "January 2006"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowShareButtons = false
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+
+  # profile-hero mode (landing page)
+  [params.profileMode]
+    enabled = true
+    title = "Hi, I'm Kapunahele 👋"
+    subtitle = "Senior Docs Engineer & Technical Writer — 10 years shaping how developers and non-developers interact with complex technical products. I write for AI-powered workflows, developer tooling, and open-source projects, and lately I've been deep in CI/CD pipelines, OpenAPI specs, and multi-agent AI workflows."
+    [[params.profileMode.buttons]]
+      name = "Portfolio"
+      url = "/about/"
+    [[params.profileMode.buttons]]
+      name = "Blog"
+      url = "/posts/"
+
+  [[params.socialIcons]]
+    name = "github"
+    title = "View Source on Github"
+    url = "https://github.com/kapunahelewong"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    title = "Connect on LinkedIn"
+    url = "https://www.linkedin.com/in/kapunahele-wong-0b594720b/"
+
+  [[params.socialIcons]]
+    name = "email"
+    title = "Send an Email"
+    url = "mailto:kapunahelewong@gmail.com"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "posts"
+    name = "Blog"
+    url = "/posts/"
+    weight = 20
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
