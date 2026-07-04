@@ -20,7 +20,7 @@ tiles:
         url: "https://bazel.build/docs"
 
   - id: angular
-    title: "Angular Documentation"
+    title: "Angular Docs"
     description: "Official Angular docs and 70+ compilable sample applications. Fielded issues, contributed my own work, and helped PRs from the open-source community land."
     image: "/images/tiles/angular.png"
     background: "#000"
@@ -29,13 +29,15 @@ tiles:
         url: "https://github.com/angular/angular/pulls?q=is%3Apr+author%3Akapunahelewong+is%3Aclosed"
 
   - id: aspect-python
-    title: "Aspect: Python + Bazel"
-    description: "Comprehensive Python documentation for Bazel, including migration guides, uv integration, virtual deps, and interpreter configuration."
+    title: "Aspect: Python & JS + Bazel"
+    description: "Comprehensive Python documentation for Bazel, including migration guides, uv integration, virtual deps, interpreter configuration, and TypeScript."
     image: "/images/tiles/aspect-logo.png"
     background: "#161617"
     links:
       - label: "Python Docs"
         url: "https://aspect.build/docs/bazel/python"
+      - label: "JavaScript Docs"
+        url: "https://aspect.build/docs/bazel/javascript"
 
   - id: pepa
     title: "Pepa"
@@ -72,7 +74,7 @@ tiles:
 
   - id: speaking-1
     title: "Legal liability and in-app copy"
-    description: "Presentation for a law class in William & Mary's Law School about copy and legal liability in tech. Bonus: you can hear me talking here!"
+    description: "Presentation for a law class in William & Mary's Law School about copy and legal liability in tech. Fall 2025."
     image: "/images/tiles/legal-talk.png"
     background: "#ffffff"
     links:
