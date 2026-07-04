@@ -13,9 +13,13 @@ title: "Portfolio"
 </div>
 
 <div class="tile">
-<h3>📄 OpenAPI &amp; API Reference</h3>
-<p>Author and maintain reference docs for REST, GraphQL, and Admin APIs — endpoint reference, auth flows, and data models for enterprise developer audiences.</p>
-<div class="tags"><span>OpenAPI</span><span>REST</span><span>GraphQL</span><span>Auth</span></div>
+<h3>📄 OpenAPI Explorers</h3>
+<p>Two API reference sites built from scratch by parsing real OpenAPI specs — no Swagger UI or Redoc, just the raw spec rendered into static pages.</p>
+<ul class="project-links">
+<li><strong>GitHub API Explorer</strong> — ~1,200 REST endpoints, grouped by tag &mdash; <a href="https://kapunahelewong.github.io/explore-openapi/">Demo</a> · <a href="https://github.com/kapunahelewong/explore-openapi">Code</a></li>
+<li><strong>Stripe API Explorer</strong> — Next.js, statically generated from Stripe's spec3.json &mdash; <a href="https://kapunahelewong.github.io/stripe-openapi-demo/">Demo</a> · <a href="https://github.com/kapunahelewong/stripe-openapi-demo">Code</a></li>
+</ul>
+<div class="tags"><span>OpenAPI</span><span>Python</span><span>Next.js</span><span>Static export</span></div>
 </div>
 
 <div class="tile">

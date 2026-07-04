@@ -33,6 +33,18 @@
     line-height: 1.5;
 }
 
+.tile .project-links {
+    list-style: none;
+    margin: 0 0 14px;
+    padding: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.tile .project-links li {
+    color: var(--secondary);
+}
+
 .tile .tags {
     display: flex;
     flex-wrap: wrap;
