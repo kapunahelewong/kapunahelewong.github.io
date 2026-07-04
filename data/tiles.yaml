@@ -12,7 +12,7 @@ tiles:
     title: "Angular Documentation"
     description: "Official Angular docs and 70+ compilable sample applications. Fielded issues, contributed my own work, and helped PRs from the open-source community land."
     image: "/images/tiles/angular.png"
-    background: "#ffffff"
+    background: "#000"
     links:
       - label: "View my PRs"
         url: "https://github.com/angular/angular/pulls?q=is%3Apr+author%3Akapunahelewong+is%3Aclosed"
@@ -65,7 +65,7 @@ tiles:
     title: "Aspect: Python + Bazel"
     description: "Comprehensive Python documentation for Bazel, including migration guides, uv integration, virtual deps, and interpreter configuration."
     image: "/images/tiles/aspect-build-logo.png"
-    background: "#ffffff"
+    background: "#000"
     links:
       - label: "Python Docs"
         url: "https://aspect.build/docs/bazel/python"
