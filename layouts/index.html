@@ -6,7 +6,7 @@
   <div class="tiles-grid">
     {{ range .Site.Data.tiles.tiles }}
       <div class="tile">
-        <div class="tile-image">
+        <div class="tile-image" style="background-color: {{ .background | default "#ffffff" }};">
           {{ if .image }}
             <img src="{{ .image }}" alt="{{ .title }}" loading="lazy">
           {{ else }}

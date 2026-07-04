@@ -1,24 +1,27 @@
 tiles:
   - id: builder
     title: "Builder Docs"
-    description: "Comprehensive developer documentation for Builder.io—APIs, SDKs, integration patterns, and in-product microcopy for a visual site-building platform."
+    description: "Comprehensive developer documentation for Builder.io—APIs, SDKs, integration patterns, and in-product microcopy."
     image: "/images/tiles/builder.png"
+    background: "#ffffff"
     links:
       - label: "View Docs"
         url: "https://www.builder.io/c/docs/developers"
 
   - id: angular
     title: "Angular Documentation"
-    description: "Official Angular docs and 70+ compilable sample applications. Guided hundreds of PRs from the open-source community."
+    description: "Official Angular docs and 70+ compilable sample applications. Fielded issues, contributed my own work, and helped PRs from the open-source community land."
     image: "/images/tiles/angular.png"
+    background: "#ffffff"
     links:
-      - label: "View PRs"
+      - label: "View my PRs"
         url: "https://github.com/angular/angular/pulls?q=is%3Apr+author%3Akapunahelewong+is%3Aclosed"
 
   - id: pepa
     title: "Pepa"
-    description: "Open-source documentation platform: MDX docs, full-text search, OpenAPI-powered API reference, and an MCP connector for AI agents."
+    description: "My pet project, an open-source documentation platform: MDX docs, full-text search, OpenAPI-powered API reference, and an MCP connector for AI agents."
     image: "/images/tiles/pepa.png"
+    background: "#ffffff"
     links:
       - label: "GitHub"
         url: "https://github.com/kapunahelewong/pepa"
@@ -29,6 +32,7 @@ tiles:
     title: "GitHub API Explorer"
     description: "Static reference site rendering GitHub's ~1,200 REST endpoints, grouped by tag. Built by parsing the OpenAPI spec with Python."
     image: "/images/tiles/github-api.png"
+    background: "#ffffff"
     links:
       - label: "GitHub"
         url: "https://github.com/kapunahelewong/explore-openapi"
@@ -37,8 +41,9 @@ tiles:
 
   - id: stripe-api
     title: "Stripe API Explorer"
-    description: "Next.js static site built by parsing Stripe's real OpenAPI spec. Renders paths, parameters, request/response schemas without Swagger UI or Redoc."
+    description: "Next.js static site built by parsing Stripe's OpenAPI spec. Renders paths, parameters, request and response schemas without Swagger UI or Redoc."
     image: "/images/tiles/stripe-api.png"
+    background: "#ffffff"
     links:
       - label: "GitHub"
         url: "https://github.com/kapunahelewong/stripe-openapi-demo"
@@ -47,8 +52,9 @@ tiles:
 
   - id: bazel
     title: "Bazel Documentation"
-    description: "Contributor to the Bazel docs migration. Authored versioned documentation for Bazel 9.1.0 and 8.7.0, plus contributor guides."
+    description: "Contributor to the Bazel docs migration. Generated versioned documentation for Bazel 9.1.0 and 8.7.0, plus contributor guides."
     image: "/images/tiles/bazel.png"
+    background: "#ffffff"
     links:
       - label: "View PRs"
         url: "https://github.com/bazelbuild/bazel/pulls?q=is%3Apr+author%3Akapunahelewong+is%3Aclosed"
@@ -58,7 +64,8 @@ tiles:
   - id: aspect-python
     title: "Aspect: Python + Bazel"
     description: "Comprehensive Python documentation for Bazel, including migration guides, uv integration, virtual deps, and interpreter configuration."
-    image: "/images/tiles/aspect-python.png"
+    image: "/images/tiles/aspect-build-logo.png"
+    background: "#ffffff"
     links:
       - label: "Python Docs"
         url: "https://aspect.build/docs/bazel/python"
@@ -67,6 +74,7 @@ tiles:
     title: "Speaking Engagements"
     description: "TBD"
     image: "/images/tiles/speaking-1.png"
+    background: "#ffffff"
     links:
       - label: "Coming Soon"
         url: "#"
@@ -75,6 +83,7 @@ tiles:
     title: "Speaking Engagements"
     description: "TBD"
     image: "/images/tiles/speaking-2.png"
+    background: "#ffffff"
     links:
       - label: "Coming Soon"
         url: "#"
