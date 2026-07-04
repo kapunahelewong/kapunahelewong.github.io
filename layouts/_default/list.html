@@ -1,0 +1,29 @@
+{{ define "main" }}
+  <article>
+    <div class="breadcrumb">
+      <a href="/">Home</a> / <span>{{ .Title }}</span>
+    </div>
+
+    <h1>{{ .Title }}</h1>
+
+    {{ if .Content }}
+      <div class="article-content">
+        {{ .Content }}
+      </div>
+    {{ end }}
+
+    <ul class="blog-list" style="list-style: none; padding: 0; margin-top: 40px;">
+      {{ range .Pages }}
+        <li>
+          <div class="blog-item-title">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </div>
+          <div class="blog-item-meta">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read</div>
+          {{ if .Summary }}
+            <div class="blog-item-summary">{{ .Summary }}</div>
+          {{ end }}
+        </li>
+      {{ end }}
+    </ul>
+  </article>
+{{ end }}

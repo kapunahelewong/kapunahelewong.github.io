@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <article>
+    <div class="breadcrumb">
+      <a href="/">Home</a> / <a href="/posts/">Blog</a> / <span>{{ .Title }}</span>
+    </div>
+
+    <h1>{{ .Title }}</h1>
+
+    <div class="article-meta">
+      {{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read
+    </div>
+
+    <div class="article-content">
+      {{ .Content }}
+    </div>
+  </article>
+{{ end }}
