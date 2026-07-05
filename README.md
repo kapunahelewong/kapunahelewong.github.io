@@ -34,4 +34,4 @@ Then open http://localhost:1313/ in your browser. Hugo watches for changes and l
 
 ## License
 
-All original content, text, and writing on this site is © 2026 Kapunahele Wong. All rights reserved. Do not republish, repost, or use commercially without permission.
+All original content, text, and writing on this site is © 2026 Kapunahele Wong. All rights reserved. If you quote me, please cite your source by linking to [https://kapunahelewong.github.io/](https://kapunahelewong.github.io/).
