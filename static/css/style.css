@@ -58,7 +58,7 @@ a:hover {
 }
 
 .header .logo a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-left: 0;
 }
 
@@ -121,6 +121,7 @@ nav a:hover {
 
   .logo a {
     display: block;
+    padding: 0;
   }
 
   nav {
@@ -132,6 +133,14 @@ nav a:hover {
   nav a {
     padding: 0;
     font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .hero {
+    padding: 20px;
   }
 }
 
