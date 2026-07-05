@@ -213,12 +213,18 @@ main {
   color: var(--color-link);
   font-size: var(--font-size-small);
   font-weight: 500;
+  transition: all 0.2s ease;
 }
 
 .tile-links a:hover {
   background: var(--color-link);
   color: var(--color-bg);
   text-decoration: none;
+  transform: scale(1.05);
+}
+
+.tile-links a:active {
+  transform: scale(0.98);
 }
 
 /* Blog Section */

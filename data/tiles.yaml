@@ -9,7 +9,7 @@ tiles:
         url: "https://www.builder.io/c/docs/developers"
 
   - id: bazel
-    title: "Bazel Documentation"
+    title: "Bazel Docs"
     description: "Contributor to the Bazel docs migration. Generated versioned documentation for Bazel 9.1.0 and 8.7.0, plus contributor guides."
     image: "/images/tiles/bazel.png"
     background: "#ffffff"
