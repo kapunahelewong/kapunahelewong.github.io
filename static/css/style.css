@@ -119,6 +119,10 @@ nav a:hover {
     text-align: center;
   }
 
+  .logo a {
+    display: block;
+  }
+
   nav {
     gap: 20px;
     width: 100%;
