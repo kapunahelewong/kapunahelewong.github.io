@@ -30,7 +30,7 @@ tiles:
 
   - id: aspect-python
     title: "Aspect: Python & JS + Bazel"
-    description: "Comprehensive Python documentation for Bazel, including migration guides, uv integration, virtual deps, interpreter configuration, and TypeScript."
+    description: "Comprehensive Python and JS documentation for Bazel, including migration guides, uv integration, virtual deps, interpreter configuration, and TypeScript."
     image: "/images/tiles/aspect-logo.png"
     background: "#161617"
     links:
@@ -60,7 +60,6 @@ tiles:
         url: "https://github.com/kapunahelewong/stripe-openapi-demo"
       - label: "Live Demo"
         url: "https://kapunahelewong.github.io/stripe-openapi-demo/"
-
 
   - id: github-api
     title: "GitHub API Explorer"
