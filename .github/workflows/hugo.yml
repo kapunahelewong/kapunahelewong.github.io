@@ -16,6 +16,7 @@ concurrency:
 
 env:
   HUGO_VERSION: 0.163.3
+  NODE_VERSION: 24
 
 jobs:
   build:
@@ -55,4 +56,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v3
