@@ -50,17 +50,6 @@ tiles:
       - label: "Live Demo"
         url: "https://kapunahelewong.github.io/pepa/"
 
-  - id: github-api
-    title: "GitHub API Explorer"
-    description: "Static reference site rendering GitHub's ~1,200 REST endpoints, grouped by tag. Built by parsing the OpenAPI spec with Python."
-    image: "/images/tiles/github-api.png"
-    background: "#f6f7fb"
-    links:
-      - label: "GitHub"
-        url: "https://github.com/kapunahelewong/explore-openapi"
-      - label: "Live Demo"
-        url: "https://kapunahelewong.github.io/explore-openapi/"
-
   - id: stripe-api
     title: "Stripe API Explorer"
     description: "Next.js static site built by parsing Stripe's OpenAPI spec. Renders paths, parameters, request and response schemas without Swagger UI or Redoc."
@@ -72,9 +61,21 @@ tiles:
       - label: "Live Demo"
         url: "https://kapunahelewong.github.io/stripe-openapi-demo/"
 
+
+  - id: github-api
+    title: "GitHub API Explorer"
+    description: "Static reference site rendering GitHub's ~1,200 REST endpoints, grouped by tag. Built by parsing the OpenAPI spec with Python."
+    image: "/images/tiles/github-api.png"
+    background: "#f6f7fb"
+    links:
+      - label: "GitHub"
+        url: "https://github.com/kapunahelewong/explore-openapi"
+      - label: "Live Demo"
+        url: "https://kapunahelewong.github.io/explore-openapi/"
+
   - id: speaking-1
     title: "Legal liability and in-app copy"
-    description: "Presentation for a law class in William & Mary's Law School about copy and legal liability in tech. Fall 2025."
+    description: "Presentation for a law class at William & Mary's Law School about copy and legal liability in tech. Fall 2025."
     image: "/images/tiles/legal-talk.png"
     background: "#ffffff"
     links:
