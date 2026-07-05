@@ -29,8 +29,9 @@ Plus a [blog](/posts) exploring documentation, information architecture, and dev
 
 ```bash
 hugo server
-Then open http://localhost:1313/ in your browser. Hugo watches for changes and live-reloads.
 ```
+
+Then open http://localhost:1313/ in your browser. Hugo watches for changes and live-reloads.
 
 ## License
 
