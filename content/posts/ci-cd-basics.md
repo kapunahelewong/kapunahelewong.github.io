@@ -2,7 +2,7 @@
 date = '2026-07-06T15:51:04-07:00'
 draft = false
 title = 'CI/CD with GitHub Actions, Part 1: The Basics'
-summary = "Learn the basics of CI/CD with an example repo that uses an OpenAPI example."
+summary = "Learn the basics of CI/CD with an example repo. This one is fun!"
 +++
 
 "CI/CD" refers to two related but distinct ideas, and understanding the difference will make every workflow file you write afterward make a lot more sense.
@@ -18,7 +18,6 @@ This post is the first in a three part series:
   <p>For a working example, see the companion repo for this post, <a href="https://github.com/kapunahelewong/cd-cd-demo">https://github.com/kapunahelewong/cd-cd-demo</a>.
 </p>
 </div>
-
 
 ## Continuous Integration vs. Continuous Deployment
 
@@ -60,9 +59,9 @@ Event triggers workflow
                  └─ Step runs a shell command or an action
 ```
 
-## Your First Workflow
+## Your first workflow
 
-Let's write the simplest useful CI workflow: run the test suite every time someone pushes code or opens a pull request.
+Let's write a short, but useful CI workflow: run the test suite every time someone pushes code or opens a pull request.
 
 ```yaml
 name: CI
@@ -92,7 +91,7 @@ jobs:
         run: npm test
 ```
 
-Walking through it:
+Here's what's happening:
 
 - `on` defines the triggers. This workflow runs on pushes to `main` and on any pull request targeting `main`.
 - `jobs.test.runs-on` picks the runner. `ubuntu-latest` is the default choice for most projects unless you specifically need macOS or Windows.
@@ -100,14 +99,16 @@ Walking through it:
 - `actions/checkout@v4` is almost always your first step. Without it, the runner is an empty machine with no access to your code.
 - `npm ci` rather than `npm install` is intentional here. `npm ci` installs exactly what is in `package-lock.json` and fails if the lockfile is out of sync, which is what you want in an automated environment.
 
-Drop this file at `.github/workflows/ci.yml`, push it, and GitHub will start running it automatically. No separate CI service, no extra account, no YAML syntax to learn beyond what is already in front of you.
+Drop this file at `.github/workflows/ci.yml`, push it, and GitHub will start running it automatically. Isn't that cool??
 
-## What Happens When It Fails
+## What happens when it fails
 
-This is worth calling out for anyone new to CI: a failing workflow does not break your repo. It shows up as a red X on the commit and on the pull request. If you have branch protection rules configured (worth doing, and covered more in Part 2), a failing required check will block merging until it is fixed. That is the entire point. CI is a gate, not a punishment.
+This is worth calling out for anyone new to CI: a failing workflow does not break your repo. It shows up as a red X on the commit and on the pull request. If you have branch protection rules configured (worth doing, and covered more in Part 2), a failing required check will block merging until it is fixed.
 
-## What's Next
+Failing checks are a regular part of cycle. You just check the output and fix the error. Usually, on a smaller repo it's something straightforward, but on a big monorepo, these can seem mysterious. If that happens to you, you can definitely check with your AI bestie, but often the maintainers are familiar with the failures and have had the fix the same ones previously in their own PRs.
 
-Part 2 covers the use cases you will actually reach for on a real project: linting, testing across multiple environments, building packages, deploying documentation sites, publishing to a registry, and using secrets safely. Part 3 goes further into matrices, artifacts, caching, and reusable workflows, including the "why" behind each one, not just the syntax.
+## What's next
 
-The companion repo for this series has a working `ci.yml` you can copy directly, along with the more advanced examples from later parts. [Link to repo]
+Part 2 covers the use cases you will actually reach for on a real project: linting, testing across multiple environments, building packages, deploying documentation sites, publishing to a registry, and using secrets safely. Part 3 goes further into matrices, artifacts, caching, and reusable workflows, including the "why" behind each one.
+
+The [companion repo](https://github.com/kapunahelewong/cd-cd-demo) for this series has a working `ci.yml` you can copy directly, along with the more advanced examples from later parts.
