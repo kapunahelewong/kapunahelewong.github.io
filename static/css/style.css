@@ -428,6 +428,37 @@ article h1 {
   color: #abb2bf;
 }
 
+/* Tables */
+.article-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 15px;
+}
+
+.article-content table th {
+  background-color: #f5f5f5;
+  border: 1px solid var(--color-border);
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.article-content table td {
+  border: 1px solid var(--color-border);
+  padding: 12px 16px;
+  color: var(--color-text);
+}
+
+.article-content table tbody tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+.article-content table tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
 /* Breadcrumb */
 .breadcrumb {
   font-size: var(--font-size-small);
