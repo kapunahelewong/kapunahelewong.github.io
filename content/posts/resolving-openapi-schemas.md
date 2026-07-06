@@ -5,20 +5,13 @@ title = 'Resolving OpenAPI schemas with TypeScript'
 summary = "Deep dive into parsing an OpenAPI spec, resolving cross-referenced schemas, guarding against circular references, and turning raw JSON into something a UI can safely render."
 +++
 
-Deep dive into parsing an OpenAPI spec, resolving cross-referenced schemas, guarding against circular references, and turning raw JSON into something a UI can safely render. This post is a full walkthrough of one piece of that pipeline, a TypeScript module that loads Stripe's OpenAPI spec and resolves its schemas into a renderable tree. It goes line by line through the actual code, covering the TypeScript patterns that make this kind of tool possible: derived types, discriminated unions, recursive data structures, and the defensive checks needed when working with data you don't fully control.
-
 <div class="tip">
   <strong>💻 Where to find the source code:</strong>
   <p>This article covers the details of the Stripe OpenAPI Demo for generating API documentation. For the original code, see <a href="https://github.com/kapunahelewong/stripe-openapi-demo/blob/main/lib/spec.ts">https://github.com/kapunahelewong/stripe-openapi-demo/blob/main/lib/spec.ts</a>.
 </p>
 </div>
 
-```typescript
-let name: string = "Alex";
-name = 42; // TypeScript error: Type 'number' is not assignable to type 'string'
-```
-
-At runtime, this is just `let name = "Alex"`. The `: string` part gets deleted during compilation.
+Deep dive into parsing an OpenAPI spec, resolving cross-referenced schemas, guarding against circular references, and turning raw JSON into something a UI can safely render. This post is a full walkthrough of one piece of that pipeline, a TypeScript module that loads Stripe's OpenAPI spec and resolves its schemas into a renderable tree. It goes line by line through the actual code, covering the TypeScript patterns that make this kind of tool possible: derived types, discriminated unions, recursive data structures, and the defensive checks needed when working with data you don't fully control.
 
 ## Defining the known values: `as const`
 
@@ -314,18 +307,18 @@ Same defensive pattern as before: check the actual runtime type of each field be
 
 ## Key takeaways
 
-A few ideas repeat throughout this file and are worth carrying into your own TypeScript code:
+A few ideas repeat throughout this file:
 
-Deriving a type from a value with `as const` plus `(typeof X)[number]` keeps a list of allowed values and its corresponding type in sync automatically, rather than maintaining both by hand.
+- Deriving a type from a value with `as const` plus `(typeof X)[number]` keeps a list of allowed values and its corresponding type in sync automatically, rather than maintaining both by hand.
 
-`Record` and `Partial` are utility types that let you describe object shapes precisely, whether that means requiring every key to be present or allowing all of them to be optional.
+- `Record` and `Partial` are utility types that let you describe object shapes precisely, whether that means requiring every key to be present or allowing all of them to be optional.
 
-Discriminated unions, built around a shared field like `kind`, let TypeScript narrow a value's type automatically based on a single check, which is one of the most common patterns you'll see in real applications.
+- Discriminated unions, built around a shared field like `kind`, let TypeScript narrow a value's type automatically based on a single check, which is one of the most common patterns you'll see in real applications.
 
-Optional chaining (`?.`) and nullish coalescing (`??`) exist for the same reason: real data is full of missing or absent fields, and these operators let you handle that without writing defensive `if` checks everywhere.
+- Optional chaining (`?.`) and nullish coalescing (`??`) exist for the same reason: real data is full of missing or absent fields, and these operators let you handle that without writing defensive `if` checks everywhere.
 
-`unknown` is the safer alternative to `any` when you genuinely don't know a value's shape yet, since it forces you to verify before using it.
+- `unknown` is the safer alternative to `any` when you genuinely don't know a value's shape yet, since it forces you to verify before using it.
 
-Recursive functions that walk untrusted or self-referencing data, like this schema resolver, need explicit guards against infinite loops. Tracking visited state with a copied `Set` per branch, rather than a single mutated set, is a reliable way to keep each recursive path isolated from its siblings.
+- Recursive functions that walk untrusted or self-referencing data, like this schema resolver, need explicit guards against infinite loops. Tracking visited state with a copied `Set` per branch, rather than a single mutated set, is a reliable way to keep each recursive path isolated from its siblings.
 
 You'll come across these same patterns when working with OpenAPI specs, especially anywhere you're parsing external data with an uncertain shape and need to build something safe and predictable out of it.

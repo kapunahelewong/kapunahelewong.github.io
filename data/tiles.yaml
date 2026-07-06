@@ -17,16 +17,6 @@ tiles:
       - label: "View Merged PRs"
         url: "https://github.com/bazelbuild/bazel/pulls?q=is%3Apr+author%3Akapunahelewong+is%3Aclosed"
 
-
-  - id: angular
-    title: "Angular Docs"
-    description: "Official Angular docs and 70+ compilable sample applications. Fielded issues, contributed my own work, and helped PRs from the open-source community land."
-    image: "/images/tiles/angular.png"
-    background: "#000"
-    links:
-      - label: "View my PRs"
-        url: "https://github.com/angular/angular/pulls?q=is%3Apr+author%3Akapunahelewong+is%3Aclosed"
-
   - id: aspect-python
     title: "Aspect: Python & JS + Bazel"
     description: "Comprehensive Python and JS documentation for Bazel, including migration guides, uv integration, virtual deps, interpreter configuration, and TypeScript."
@@ -39,8 +29,8 @@ tiles:
         url: "https://aspect.build/docs/bazel/javascript"
 
   - id: pepa
-    title: "Pepa"
-    description: "My pet project, an open-source documentation platform: MDX docs, full-text search, OpenAPI-powered API reference, and an MCP connector for AI agents."
+    title: "Pepa Docs Platform"
+    description: "My pet project, an open-source documentation platform: MDX docs, full-text search, OpenAPI-powered API docs reference, and an MCP connector for AI agents."
     image: "/images/tiles/pepa.png"
     background: "#000"
     links:
@@ -48,6 +38,17 @@ tiles:
         url: "https://github.com/kapunahelewong/pepa"
       - label: "Live Demo"
         url: "https://kapunahelewong.github.io/pepa/"
+
+  - id: github-api
+    title: "GitHub API Explorer"
+    description: "Static reference site rendering GitHub's ~1,200 REST endpoints, grouped by tag. Built by parsing the OpenAPI spec with Python."
+    image: "/images/tiles/github-api.png"
+    background: "#f6f7fb"
+    links:
+      - label: "GitHub"
+        url: "https://github.com/kapunahelewong/explore-openapi"
+      - label: "Live Demo"
+        url: "https://kapunahelewong.github.io/explore-openapi/"
 
   - id: stripe-api
     title: "Stripe API Explorer"
@@ -60,16 +61,14 @@ tiles:
       - label: "Live Demo"
         url: "https://kapunahelewong.github.io/stripe-openapi-demo/"
 
-  - id: github-api
-    title: "GitHub API Explorer"
-    description: "Static reference site rendering GitHub's ~1,200 REST endpoints, grouped by tag. Built by parsing the OpenAPI spec with Python."
-    image: "/images/tiles/github-api.png"
-    background: "#f6f7fb"
+  - id: angular
+    title: "Angular Docs"
+    description: "Official Angular docs and 70+ compilable sample applications. Fielded issues, contributed my own work, and helped PRs from the open-source community land."
+    image: "/images/tiles/angular.png"
+    background: "#000"
     links:
-      - label: "GitHub"
-        url: "https://github.com/kapunahelewong/explore-openapi"
-      - label: "Live Demo"
-        url: "https://kapunahelewong.github.io/explore-openapi/"
+      - label: "View my PRs"
+        url: "https://github.com/angular/angular/pulls?q=is%3Apr+author%3Akapunahelewong+is%3Aclosed"
 
   - id: speaking-1
     title: "Legal liability and in-app copy"
