@@ -375,6 +375,10 @@ article h1 {
   margin-bottom: 15px;
 }
 
+.article-content h2 code {
+  font-size: 24px;
+}
+
 .article-content h3 {
   font-size: 18px;
   font-weight: 600;
