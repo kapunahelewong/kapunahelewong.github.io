@@ -309,7 +309,7 @@ return {
 
 Same defensive pattern as before: check the actual runtime type of each field before trusting it, and fall back to a safe default if the raw JSON doesn't match expectations.
 
-## The patterns worth remembering
+## Key takeaways
 
 A few ideas repeat throughout this file and are worth carrying into your own TypeScript code:
 
