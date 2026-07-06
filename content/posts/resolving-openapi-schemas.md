@@ -5,7 +5,7 @@ title = 'Resolving OpenAPI schemas with TypeScript'
 summary = ""
 +++
 
-JavaScript has no types. A variable can hold a string, then later a number, with no complaints. TypeScript adds a layer on top of JavaScript that only exists while you're writing code, at what's called compile time. It gets stripped away entirely when the code actually runs. Everything with a colon, `interface`, `type`, or `as` doesn't exist at runtime. It's there purely so your editor and the compiler can catch mistakes before you ever run the code.
+Deep dive into parsing a spec, resolving cross-referenced schemas, guarding against circular references, and turning raw JSON into something a UI can safely render. This post is a full walkthrough of one piece of that pipeline, a TypeScript module that loads Stripe's OpenAPI spec and resolves its schemas into a renderable tree. It goes line by line through the actual code, covering the TypeScript patterns that make this kind of tool possible: derived types, discriminated unions, recursive data structures, and the defensive checks needed when working with data you don't fully control.
 
 This article covers the details of the Stripe OpenAPI Demo for generating API documentation. For the original code, see [https://github.com/kapunahelewong/stripe-openapi-demo/blob/main/lib/spec.ts](https://github.com/kapunahelewong/stripe-openapi-demo/blob/main/lib/spec.ts).
 
