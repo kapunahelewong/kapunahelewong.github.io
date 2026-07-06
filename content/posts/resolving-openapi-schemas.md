@@ -2,10 +2,10 @@
 date = '2026-07-06T11:19:04-07:00'
 draft = false
 title = 'Resolving OpenAPI schemas with TypeScript'
-summary = ""
+summary = "Deep dive into parsing an OpenAPI spec, resolving cross-referenced schemas, guarding against circular references, and turning raw JSON into something a UI can safely render."
 +++
 
-Deep dive into parsing a spec, resolving cross-referenced schemas, guarding against circular references, and turning raw JSON into something a UI can safely render. This post is a full walkthrough of one piece of that pipeline, a TypeScript module that loads Stripe's OpenAPI spec and resolves its schemas into a renderable tree. It goes line by line through the actual code, covering the TypeScript patterns that make this kind of tool possible: derived types, discriminated unions, recursive data structures, and the defensive checks needed when working with data you don't fully control.
+Deep dive into parsing an OpenAPI spec, resolving cross-referenced schemas, guarding against circular references, and turning raw JSON into something a UI can safely render. This post is a full walkthrough of one piece of that pipeline, a TypeScript module that loads Stripe's OpenAPI spec and resolves its schemas into a renderable tree. It goes line by line through the actual code, covering the TypeScript patterns that make this kind of tool possible: derived types, discriminated unions, recursive data structures, and the defensive checks needed when working with data you don't fully control.
 
 <div class="tip">
   <strong>💻 Where to find the source code:</strong>

@@ -2,7 +2,7 @@
 date = '2026-07-03T17:51:04-07:00'
 draft = false
 title = 'Information architecture is the foundation of good documentation'
-summary = ""
+summary = "Create reliable, trustworthy documentation with solid IA and code."
 +++
 
 Good docs begin with architecture, that is, the invisible structure that determines whether someone can find what they need in the first place.
