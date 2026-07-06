@@ -47,3 +47,13 @@ Every line has to compile, every import has to exist, every variable has to be d
 ## The throughline
 
 Architecture, consistency, and tested code all point to the same goal of reducing the distance between "I have a question" and "I have a working answer." It's worthwhile work. It's the difference between documentation people tolerate and documentation people trust.
+
+<div class="tip">
+  <strong>💡 Tip:</strong>
+  <p>Start with information architecture before you write a single page. Spend time understanding your audience and the mental models they bring to your product. That foundation makes everything else easier.</p>
+</div>
+
+<div class="tip tip-warning">
+  <strong>⚠️ Warning:</strong>
+  <p>Don't let docs drift from your code. Outdated examples are worse than no examples at all—they destroy trust. If you can't keep them in sync, be honest about it in your docs.</p>
+</div>
