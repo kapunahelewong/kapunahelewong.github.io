@@ -7,8 +7,11 @@ summary = ""
 
 Deep dive into parsing a spec, resolving cross-referenced schemas, guarding against circular references, and turning raw JSON into something a UI can safely render. This post is a full walkthrough of one piece of that pipeline, a TypeScript module that loads Stripe's OpenAPI spec and resolves its schemas into a renderable tree. It goes line by line through the actual code, covering the TypeScript patterns that make this kind of tool possible: derived types, discriminated unions, recursive data structures, and the defensive checks needed when working with data you don't fully control.
 
-This article covers the details of the Stripe OpenAPI Demo for generating API documentation. For the original code, see [https://github.com/kapunahelewong/stripe-openapi-demo/blob/main/lib/spec.ts](https://github.com/kapunahelewong/stripe-openapi-demo/blob/main/lib/spec.ts).
-
+<div class="tip">
+  <strong>💻 Where to find the source code:</strong>
+  <p>This article covers the details of the Stripe OpenAPI Demo for generating API documentation. For the original code, see <a href="https://github.com/kapunahelewong/stripe-openapi-demo/blob/main/lib/spec.ts">https://github.com/kapunahelewong/stripe-openapi-demo/blob/main/lib/spec.ts</a>.
+</p>
+</div>
 
 ```typescript
 let name: string = "Alex";

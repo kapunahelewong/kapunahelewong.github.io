@@ -33,6 +33,40 @@ hugo server
 
 Then open http://localhost:1313/ in your browser. Hugo watches for changes and live-reloads.
 
+## Features
+
+- Highlight.js for syntax highlighting.
+- No template at the moment, so complete control over styles.
+- Tip variants:
+
+```html
+<div class="tip">
+  <strong>💡 Tip:</strong>
+  <p>Your tip text here.</p>
+</div>
+```
+
+```html
+<div class="tip tip-warning">
+  <strong>⚠️ Warning:</strong>
+  <p>Your warning text here.</p>
+</div>
+```
+
+```html
+<div class="tip tip-important">
+  <strong>🔴 Important:</strong>
+  <p>Your important note here.</p>
+</div>
+```
+
+```html
+<div class="tip tip-note">
+  <strong>📝 Note:</strong>
+  <p>Your note text here.</p>
+</div>
+```
+
 ## License
 
 All original content, text, and writing on this site is © 2026 Kapunahele Wong. All rights reserved. If you quote me, please cite your source by linking to [https://kapunahelewong.github.io/](https://kapunahelewong.github.io/).
