@@ -7,9 +7,9 @@ summary = ""
 
 Good docs begin with architecture, that is, the invisible structure that determines whether someone can find what they need in the first place.
 
-I've spent over a decade writing technical documentation, for startups, Angular, and Bazel. The pattern holds everywhere: the best-written page in the world is useless if no one can find it, and a merely adequate page becomes (gasp) valuable if it sits exactly where a reader expects it to.
+I've spent over a decade writing technical documentation for startups, Angular, and Bazel. The pattern holds everywhere: the best-written page in the world is useless if no one can find it, and a merely adequate page becomes (gasp) valuable if it sits exactly where a reader expects it to.
 
-## Discoverability is a design problem, not a search problem
+## Discoverability and design
 
 Teams often try to solve discoverability with better search. Search helps, but it's a patch over a deeper issue. The real fix is upstream: decide on your categories, your naming conventions, your hierarchy, and stick to them. If you have to pivot later, that's ok, just be clear and intentional about it.
 
