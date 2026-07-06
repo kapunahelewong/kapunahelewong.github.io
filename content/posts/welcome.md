@@ -25,6 +25,25 @@ The same principle applies at the page level. If one guide presents steps as num
 
 There's one non-negotiable in my own work: every code snippet in a doc has to actually run. It's tempting to write "illustrative" code that's close enough, especially under deadline pressure. But a snippet with a typo, an outdated API call, or a missing import actively erodes trust. A reader who copies broken code and hits an error will doubt every other snippet in your docs, even the correct ones. Testing snippets is part of what gives the snippet the authority of documentation rather than a suggestion.
 
+For example, when documenting a Python library, I always include working code:
+
+```python
+from mylib import configure
+
+# Initialize the library with production settings
+config = configure(
+    debug=False,
+    timeout=30,
+    retries=3
+)
+
+# Use it immediately
+result = config.run()
+print(f"Success: {result}")
+```
+
+Every line has to compile, every import has to exist, every variable has to be defined.
+
 ## The throughline
 
 Architecture, consistency, and tested code all point to the same goal of reducing the distance between "I have a question" and "I have a working answer." It's worthwhile work. It's the difference between documentation people tolerate and documentation people trust.
