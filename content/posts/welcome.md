@@ -19,11 +19,11 @@ If you're documenting a product, the company's messaging and positioning, along 
 
 ## Consistent paradigms reduce cognitive load
 
-The same principle applies at the page level. If one guide presents steps as numbered lists and the next presents nearly identical steps as prose paragraphs, the reader has to re-learn how to read your docs every time they switch pages. Pick a paradigm — how you present prerequisites, how you format warnings, how you structure a getting-started guide versus a how-to versus a reference page — and apply it everywhere. The goal is for the *shape* of the documentation to become as familiar as the content itself, so readers spend their attention on the material, not on decoding your formatting choices.
+The same principle applies at the page level. If one guide presents steps as numbered lists and the next presents nearly identical steps as prose paragraphs, the reader has to re-learn how to read your docs every time they switch pages. Pick a paradigm — how you present prerequisites, how you format warnings, how you structure a getting-started guide versus a how-to versus a reference page — and apply it everywhere. The goal is for the _shape_ of the documentation to become as familiar as the content itself, so readers spend their attention on the material, not on decoding your formatting choices.
 
-## Code snippets are a promise, not decoration
+## Code snippets need to compile
 
-There's one non-negotiable in my own work: every code snippet in a doc has to actually run. It's tempting to write "illustrative" code that's close enough, especially under deadline pressure. But a snippet with a typo, an outdated API call, or a missing import actively erodes trust. A reader who copies broken code and hits an error will doubt every other snippet in your docs, even the correct ones. Testing snippets is part of what gives the snippet the authority of  documentation rather than a suggestion.
+There's one non-negotiable in my own work: every code snippet in a doc has to actually run. It's tempting to write "illustrative" code that's close enough, especially under deadline pressure. But a snippet with a typo, an outdated API call, or a missing import actively erodes trust. A reader who copies broken code and hits an error will doubt every other snippet in your docs, even the correct ones. Testing snippets is part of what gives the snippet the authority of documentation rather than a suggestion.
 
 ## The throughline
 
