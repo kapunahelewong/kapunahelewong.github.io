@@ -2,7 +2,7 @@
 date = '2026-07-06T17:30:00-07:00'
 draft = false
 title = 'CI/CD with GitHub Actions, Part 2: Common Use Cases'
-summary = "Part 2 of the CI/CD with GitHub Actions series. "
+summary = "Part 2 of the CI/CD with GitHub Actions series. Learn about linting, building, deploying, and more. "
 +++
 
 ## A little context before we get started
@@ -177,6 +177,12 @@ To prevent merging a pull request while CI is still red, go to your repo setting
 
 ## What's next
 
-Stay tuned for part 3 that will go into the patterns that make larger pipelines maintainable: build matrices in full (this is also so cool), why and when to create artifacts, caching dependencies between runs, reusable workflows, and controlling concurrency so you are not running five deployments to the same environment at once.
+Continue on to [CI/CD with GitHub Actions, Part 3: Matrices, Artifacts, and Advanced Patterns](/posts/ci-cd-basics/) to go into the patterns that make larger pipelines maintainable:
+
+- build matrices in full (this is also so cool)
+- why and when to create artifacts
+- caching dependencies between runs
+- reusable workflows
+- controlling concurrency so you are not running five deployments to the same environment at once
 
 The full working versions of every workflow in this post are in the [companion repo](https://github.com/kapunahelewong/cd-cd-demo).
