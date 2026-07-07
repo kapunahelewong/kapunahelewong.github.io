@@ -76,7 +76,7 @@ tiles:
     image: "/images/tiles/ci-cd-tutorial.png"
     background: "#000"
     links:
-      - label: "Companion repo to my CI/CD blog series"
+      - label: "Companion repo to my CI/CD blog series on how to create GitHub workflows and use them to deploy docs."
         url: "https://github.com/kapunahelewong/cd-cd-demo"
       - label: "Part 1 of series"
         url: "/posts/ci-cd-basics"
