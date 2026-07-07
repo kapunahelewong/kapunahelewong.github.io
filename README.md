@@ -6,7 +6,7 @@ A minimal, custom-built portfolio site showcasing my work in documentation, open
 
 ## What's here
 
-A 3×3 grid of projects and contributions:
+My favorite projects and contributions:
 
 - **Builder Docs** — Comprehensive developer documentation for Builder.io
 - **Angular** — Official Angular docs and 70+ sample applications
@@ -14,6 +14,7 @@ A 3×3 grid of projects and contributions:
 - **GitHub & Stripe API Explorers** — Static reference sites built from OpenAPI specs
 - **Bazel** — Contributor to the docs migration project
 - **Aspect** — Python and JavaScript documentation for Bazel
+- **CI/CD Docs Pipeline tutorial** — A tutorial series about creating workflows for API docs
 - **Speaking** — Selected talks and presentations
 
 Plus a [blog](/posts) exploring documentation, information architecture, and developer experience.
