@@ -127,6 +127,7 @@ nav a:hover {
 .hero-text {
   text-align: left;
   flex: 1;
+  padding-top: 20px;
 }
 
 .hero h1 {
