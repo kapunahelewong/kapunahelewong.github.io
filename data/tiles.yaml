@@ -72,23 +72,23 @@ tiles:
 
   - id: ci-cd-tutorial
     title: "CI/CD in GitHub Actions"
-    description: "Demo on how to use CI/CD"
+    description: "Companion repo to my CI/CD blog series on how to create GitHub workflows and use them to deploy docs."
     image: "/images/tiles/ci-cd-tutorial.png"
     background: "#000"
     links:
-      - label: "Companion repo to my CI/CD blog series on how to create GitHub workflows and use them to deploy docs."
+      - label: "GitHub"
         url: "https://github.com/kapunahelewong/cd-cd-demo"
       - label: "Part 1 of series"
         url: "/posts/ci-cd-basics"
 
-  - id: speaking-1
-    title: "Legal liability and in-app copy"
-    description: "Presentation for a law class at William & Mary's Law School about copy and legal liability in tech. Fall 2025."
-    image: "/images/tiles/legal-talk.png"
-    background: "#ffffff"
-    links:
-      - label: "Watch on YouTube"
-        url: "https://youtu.be/hAKQmkwu9zM"
+  # - id: speaking-1
+  #   title: "Legal liability and in-app copy"
+  #   description: "Presentation for a law class at William & Mary's Law School about copy and legal liability in tech. Fall 2025."
+  #   image: "/images/tiles/legal-talk.png"
+  #   background: "#ffffff"
+  #   links:
+  #     - label: "Watch on YouTube"
+  #       url: "https://youtu.be/hAKQmkwu9zM"
 
   - id: speaking-2
     title: "Want to see me live code?"
