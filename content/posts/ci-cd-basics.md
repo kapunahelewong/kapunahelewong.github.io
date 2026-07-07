@@ -5,25 +5,26 @@ title = 'CI/CD with GitHub Actions, Part 1: The Basics'
 summary = "Learn the basics of CI/CD with an example repo. This one is fun!"
 +++
 
+## About this series
+
 "CI/CD" refers to two related but distinct ideas, and understanding the difference will make every workflow file you write afterward make a lot more sense.
 
 This post is the first in a three part series:
 
-- Here, I cover the fundamentals: what CI and CD actually mean, how GitHub Actions is structured, and how to write your first workflow.
+- Part 1 (here): I cover the fundamentals: what CI and CD actually mean, how GitHub Actions is structured, and how to write your first workflow.
 - Part 2: covers the use cases you will run into most often on real projects.
 - Part 3: covers more advanced patterns like build matrices, artifacts, caching, and reusable workflows.
 
 <div class="tip">
-  <strong>💻 Where to find the source code:</strong>
+  <strong>💻 Source code:</strong>
   <p>For a working example, see the companion repo for this post, <a href="https://github.com/kapunahelewong/cd-cd-demo">https://github.com/kapunahelewong/cd-cd-demo</a>.
 </p>
 </div>
 
 ## Continuous Integration vs. Continuous Deployment
 
-**Continuous Integration (CI)** is about verification. Every time someone pushes code, CI runs an automated set of checks: does it build, do the tests pass, does the linter complain, are there obvious security issues. The goal of CI is to catch problems the moment they are introduced.
-
-**Continuous Deployment (CD)**, sometimes called Continuous Delivery depending on how much human approval is involved, is about getting verified code into the hands of users. Once code passes CI, CD takes over: building artifacts, pushing to a registry, deploying to staging or production, or publishing a package.
+- **Continuous Integration (CI)** is about verification. Every time someone pushes code, CI runs an automated set of checks: does it build, do the tests pass, does the linter complain, are there obvious security issues. The goal of CI is to catch problems the moment they are introduced.
+- **Continuous Deployment (CD)**, sometimes called Continuous Delivery depending on how much human approval is involved, is about getting verified code into the hands of users. Once code passes CI, CD takes over: building artifacts, pushing to a registry, deploying to staging or production, or publishing a package.
 
 Consider this as a mental model:
 
@@ -38,7 +39,7 @@ Delivery and deployment are close cousins. Continuous Delivery means every chang
 
 Both halves usually live in the same GitHub Actions setup, but they are conceptually separate stages, and I will treat them that way throughout this series. Even inside a single workflow file, it helps to ask "is this step verifying something, or is this step shipping something" because that distinction shapes when it should run and what should happen if it fails.
 
-## How GitHub Actions Is Structured
+## How GitHub Actions is structured
 
 GitHub Actions has a small vocabulary. Once these terms click, reading someone else's workflow file gets a lot easier.
 
@@ -101,14 +102,19 @@ Here's what's happening:
 
 Drop this file at `.github/workflows/ci.yml`, push it, and GitHub will start running it automatically. Isn't that cool??
 
+<div class="tip">
+  <strong>💻 About the runner:</strong>
+  <p>For the sake of brevity, I've only inluded one runner, <code>ubuntu-latest</code>, but in real life, you'd most likely have one for <code>windows-latest</code> and <code>macos-latest</code>.</p>
+</div>
+
 ## What happens when it fails
 
-This is worth calling out for anyone new to CI: a failing workflow does not break your repo. It shows up as a red X on the commit and on the pull request. If you have branch protection rules configured (worth doing, and covered more in Part 2), a failing required check will block merging until it is fixed.
+A failing workflow up as a red X on the commit and on the pull request. If you have branch protection rules configured (a good idea, and covered more in Part 2), a failing required check will block merging until it is fixed.
 
-Failing checks are a regular part of cycle. You just check the output and fix the error. Usually, on a smaller repo it's something straightforward, but on a big monorepo, these can seem mysterious. If that happens to you, you can definitely check with your AI bestie, but often the maintainers are familiar with the failures and have had the fix the same ones previously in their own PRs.
+Failing checks are a regular part of the cycle. You just check the output and fix the error. Usually, on a smaller repo it's something straightforward, but on a big monorepo, these can seem pretty mysterious. If that happens to you, you can definitely check with your AI bestie, but often the maintainers are familiar with the failures and have had to fix the same ones previously in their own PRs.
 
 ## What's next
 
 Part 2 covers the use cases you will actually reach for on a real project: linting, testing across multiple environments, building packages, deploying documentation sites, publishing to a registry, and using secrets safely. Part 3 goes further into matrices, artifacts, caching, and reusable workflows, including the "why" behind each one.
 
-The [companion repo](https://github.com/kapunahelewong/cd-cd-demo) for this series has a working `ci.yml` you can copy directly, along with the more advanced examples from later parts.
+The [source code](https://github.com/kapunahelewong/cd-cd-demo) for this series has a working `ci.yml` you can copy directly, along with the more advanced examples from later parts.

@@ -1,7 +1,7 @@
 +++
 date = '2026-07-06T11:19:04-07:00'
 draft = false
-title = 'Resolving OpenAPI schemas with TypeScript'
+title = 'Resolving OpenAPI Schemas with TypeScript'
 summary = "Deep dive into parsing an OpenAPI spec, resolving cross-referenced schemas, guarding against circular references, and turning raw JSON into something a UI can safely render."
 +++
 

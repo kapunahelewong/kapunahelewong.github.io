@@ -507,7 +507,6 @@ article h1 {
 .tip p {
   margin: 0;
   color: var(--color-text);
-  font-size: 15px;
 }
 
 .tip p + p {

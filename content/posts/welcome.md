@@ -1,7 +1,7 @@
 +++
 date = '2026-07-03T17:51:04-07:00'
 draft = false
-title = 'Information architecture is the foundation of good documentation'
+title = 'Information Architecture is the Foundation of Good Documentation'
 summary = "Create reliable, trustworthy documentation with solid IA and code."
 +++
 
