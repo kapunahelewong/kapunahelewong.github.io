@@ -70,6 +70,17 @@ tiles:
       - label: "View my PRs"
         url: "https://github.com/angular/angular/pulls?q=is%3Apr+author%3Akapunahelewong+is%3Aclosed"
 
+  - id: ci-cd-tutorial
+    title: "CI/CD in GitHub Actions"
+    description: "Demo on how to use CI/CD"
+    image: "/images/tiles/ci-cd-tutorial.png"
+    background: "#000"
+    links:
+      - label: "Companion repo to my CI/CD blog series"
+        url: "https://github.com/kapunahelewong/cd-cd-demo"
+      - label: "Part 1 of series"
+        url: "/posts/ci-cd-basics"
+
   - id: speaking-1
     title: "Legal liability and in-app copy"
     description: "Presentation for a law class at William & Mary's Law School about copy and legal liability in tech. Fall 2025."

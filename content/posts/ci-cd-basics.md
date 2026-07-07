@@ -12,7 +12,7 @@ summary = "Learn the basics of CI/CD with an example repo. This one is fun!"
 This post is the first in a three part series:
 
 - Part 1 (here): I cover the fundamentals: what CI and CD actually mean, how GitHub Actions is structured, and how to write your first workflow.
-- Part 2: covers the use cases you will run into most often on real projects.
+- [Part 2](/posts/ci-cd-part-2): covers the use cases you will run into most often on real projects.
 - Part 3: covers more advanced patterns like build matrices, artifacts, caching, and reusable workflows.
 
 <div class="tip">
