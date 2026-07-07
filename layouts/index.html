@@ -1,7 +1,12 @@
 {{ define "main" }}
   <div class="hero">
-    <h1>{{ .Site.Params.tagline | default "10 years shipping developer docs and open-source tools." }}</h1>
-    <p>Here's a snapshot of my work: the docs I've shipped at scale, some of the open-source projects I've contributed to, the documentation platform I've built, OpenAPI-related projects, and selected talks.</p>
+    <div class="hero-content">
+      <img src="/images/profile.png" alt="Me at sunset with the Pacific Ocean in the background" class="hero-profile" />
+      <div class="hero-text">
+        <h1>{{ .Site.Params.tagline | default "10 years shipping developer docs and open-source tools." }}</h1>
+        <p>Here's a snapshot of my work: the docs I've shipped at scale, some of the open-source projects I've contributed to, the documentation platform I've built, OpenAPI-related projects, and selected talks.</p>
+      </div>
+    </div>
   </div>
 
   <div class="tiles-grid">
