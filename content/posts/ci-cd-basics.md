@@ -1,7 +1,7 @@
 +++
 date = '2026-07-06T15:51:04-07:00'
 draft = false
-title = 'CI/CD with GitHub Actions, Part 1: The Basics'
+title = 'CI/CD with GitHub Actions, Part 1: the basics'
 summary = "Learn the basics of CI/CD with an example repo. This one is fun!"
 +++
 

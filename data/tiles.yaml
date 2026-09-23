@@ -1,13 +1,4 @@
 tiles:
-  - id: builder
-    title: "Builder Docs"
-    description: "Comprehensive developer documentation for Builder.io—APIs, SDKs, integration patterns, and in-product microcopy."
-    image: "/images/tiles/builder.png"
-    background: "#000"
-    links:
-      - label: "View Docs"
-        url: "https://www.builder.io/c/docs/developers"
-
   - id: bazel
     title: "Bazel Docs"
     description: "Contributor to the Bazel docs migration. Generated versioned documentation for Bazel 9.1.0 and 8.7.0, plus contributor guides."
@@ -28,6 +19,15 @@ tiles:
       - label: "JavaScript Docs"
         url: "https://aspect.build/docs/bazel/javascript"
 
+  - id: builder
+    title: "Builder Docs"
+    description: "Comprehensive developer documentation for Builder.io—APIs, SDKs, integration patterns, and in-product microcopy."
+    image: "/images/tiles/builder.png"
+    background: "#000"
+    links:
+      - label: "View Docs"
+        url: "https://www.builder.io/c/docs/developers"
+        
   - id: pepa
     title: "Pepa Docs Platform"
     description: "My pet project, an open-source documentation platform: MDX docs, full-text search, OpenAPI-powered API docs reference, and an MCP connector for AI agents."

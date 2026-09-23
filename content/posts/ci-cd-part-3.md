@@ -1,7 +1,7 @@
 +++
 date = '2026-07-06T21:20:00-07:00'
 draft = false
-title = "CI/CD with GitHub Actions, Part 3: Matrices, Artifacts, and Advanced Patterns"
+title = "CI/CD with GitHub Actions, Part 3: matrices, artifacts, and advanced patterns"
 summary = "Part 3 of the CI/CD with GitHub Actions series. Includes matrices, artifacts, caching, reusable workflows, composite actions, and concurrency controls."
 +++
 
